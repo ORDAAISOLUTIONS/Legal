@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Sale — ORDA AI SOLUTIONS</title>
+  <meta name="description" content="Terms of Sale for ORDA AI SOLUTIONS Chrome Extensions. Governed by English law.">
+  <meta name="robots" content="index, follow">
+  <link rel="alternate" hreflang="en" href="terms.html">
+  <link rel="alternate" hreflang="x-default" href="terms.html">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 820px; margin: 0 auto; padding: 0 24px 48px; color: #1a1a1a; line-height: 1.65; background: #fefefe; }
+    .lang-switcher { position: sticky; top: 0; z-index: 100; background: #fefefe; border-bottom: 1px solid #e5e5e5; padding: 12px 24px; margin: 0 -24px 32px; display: flex; align-items: center; gap: 12px; font-size: 14px; }
+    .lang-switcher label { color: #666; font-weight: 500; }
+    .lang-switcher select { padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 4px; background: #fff; font-size: 14px; font-family: inherit; color: #1a1a1a; cursor: pointer; min-width: 200px; }
+    .lang-switcher select:hover { border-color: #0066cc; }
+    .lang-switcher select:focus { outline: 2px solid #0066cc; outline-offset: 1px; }
+    .lang-switcher .lang-icon { color: #0066cc; font-size: 16px; }
+    main { padding-top: 32px; }
+    h1 { font-size: 32px; font-weight: 700; margin: 0 0 8px; color: #0a0a0a; }
+    h2 { font-size: 20px; font-weight: 600; margin: 40px 0 12px; color: #0a0a0a; border-bottom: 1px solid #e5e5e5; padding-bottom: 8px; }
+    h3 { font-size: 16px; font-weight: 600; margin: 20px 0 8px; color: #0a0a0a; }
+    .subtitle { color: #666; font-size: 15px; margin: 0 0 32px; }
+    .meta { background: #f7f7f7; border-left: 3px solid #0066cc; padding: 16px 20px; margin: 24px 0; font-size: 14px; color: #444; }
+    .meta strong { color: #0a0a0a; }
+    .highlight { background: #fffbea; border-left: 3px solid #d97706; padding: 14px 18px; margin: 20px 0; font-size: 14.5px; }
+    .success { background: #ecfdf5; border-left: 3px solid #059669; padding: 14px 18px; margin: 20px 0; font-size: 14.5px; }
+    .warn { background: #fef2f2; border-left: 3px solid #dc2626; padding: 14px 18px; margin: 20px 0; font-size: 14.5px; }
+    p { margin: 12px 0; }
+    ul { margin: 12px 0; padding-left: 22px; }
+    li { margin: 6px 0; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-size: 13px; color: #888; text-align: center; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+    .toc { background: #fafafa; padding: 16px 24px; margin: 24px 0 32px; border-radius: 6px; font-size: 14px; }
+    .toc ol { margin: 8px 0 0; padding-left: 22px; }
+    .toc li { margin: 4px 0; }
+    .withdrawal-form { background: #f5f7fa; border: 1px solid #d1d9e0; padding: 20px 24px; margin: 20px 0; font-size: 14px; font-family: Georgia, serif; white-space: pre-line; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th, td { text-align: left; padding: 10px 12px; border: 1px solid #e5e5e5; vertical-align: top; }
+    th { background: #f5f5f5; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+<div class="lang-switcher" data-current-lang="en" data-filename="terms.html">
+  <span class="lang-icon" aria-hidden="true">🌐</span>
+  <label for="lang-select">Language:</label>
+  <select id="lang-select" onchange="switchLanguage(this.value)" aria-label="Select language"></select>
+  <noscript><a href="index.html">Choose another language</a></noscript>
+</div>
+<script>
+(function() {
+  var LANGUAGES = [
+    { code: 'en', name: 'English' },
+    { code: 'af', name: 'Afrikaans' }, { code: 'sq', name: 'Shqip' },
+    { code: 'ar', name: 'العربية' }, { code: 'hy', name: 'Հայերե坮' },
+    { code: 'az', name: 'Azərbaycanca' }, { code: 'eu', name: 'Euskara' },
+    { code: 'be', name: 'Беларуская' }, { code: 'bn', name: 'বাংলা' },
+    { code: 'bg', name: 'Български' }, { code: 'ca', name: 'Català' },
+    { code: 'zh-CN', name: '简体中文' }, { code: 'zh-TW', name: '繁體中文' },
+    { code: 'hr', name: 'Hrvatski' }, { code: 'cs', name: 'Čeština' },
+    { code: 'da', name: 'Dansk' }, { code: 'nl', name: 'Nederlands' },
+    { code: 'et', name: 'Eesti' }, { code: 'fi', name: 'Suomi' },
+    { code: 'fr', name: 'Français' }, { code: 'gl', name: 'Galego' },
+    { code: 'ka', name: 'ქართული' }, { code: 'de', name: 'Deutsch' },
+    { code: 'el', name: 'Ελληνικά' }, { code: 'he', name: 'עברית' },
+    { code: 'hi', name: 'हिन्दी' }, { code: 'hu', name: 'Magyar' },
+    { code: 'is', name: 'Íslenska' }, { code: 'id', name: 'Bahasa Indonesia' },
+    { code: 'it', name: 'Italiano' }, { code: 'ja', name: '日本語' },
+    { code: 'kk', name: 'Қазақша' }, { code: 'ko', name: '한국어' },
+    { code: 'lv', name: 'Latviešu' }, { code: 'lt', name: 'Lietuvių' },
+    { code: 'mk', name: 'Македонски' }, { code: 'ms', name: 'Bahasa Melayu' },
+    { code: 'mt', name: 'Malti' }, { code: 'no', name: 'Norsk' },
+    { code: 'fa', name: 'فارسی' }, { code: 'pl', name: 'Polski' },
+    { code: 'pt-BR', name: 'Português (Brasil)' }, { code: 'pt-PT', name: 'Português (Portugal)' },
+    { code: 'ro', name: 'Română' }, { code: 'ru', name: 'Русский' },
+    { code: 'sr', name: 'Српски' }, { code: 'sk', name: 'Slovenčina' },
+    { code: 'sl', name: 'Slovenščina' }, { code: 'es', name: 'Español' },
+    { code: 'sv', name: 'Svenska' }, { code: 'th', name: 'ไทย' },
+    { code: 'tr', name: 'Türkçe' }, { code: 'uk', name: 'Українська' },
+    { code: 'ur', name: 'اردو' }, { code: 'vi', name: 'Tiếng Việt' }
+  ];
+  var switcher = document.querySelector('.lang-switcher');
+  if (!switcher) return;
+  var currentLang = switcher.getAttribute('data-current-lang') || 'en';
+  var filename = switcher.getAttribute('data-filename');
+  var select = document.getElementById('lang-select');
+  LANGUAGES.forEach(function(lang) {
+    var opt = document.createElement('option');
+    opt.value = lang.code; opt.textContent = lang.name;
+    if (lang.code === currentLang) opt.selected = true;
+    select.appendChild(opt);
+  });
+  window.switchLanguage = function(langCode) {
+    if (langCode === currentLang) return;
+    var path = window.location.pathname; var base;
+    if (currentLang === 'en') {
+      base = path.substring(0, path.lastIndexOf('/') + 1);
+    } else {
+      var langSegment = '/' + currentLang + '/';
+      var idx = path.indexOf(langSegment);
+      base = idx >= 0 ? path.substring(0, idx + 1) : path.substring(0, path.lastIndexOf('/') + 1);
+    }
+    window.location.href = langCode === 'en' ? base + filename : base + langCode + '/' + filename;
+  };
+})();
+</script>
+
+<main>
+
+<h1>Terms of Sale</h1>
+<p class="subtitle">ORDA AI SOLUTIONS — Chrome Browser Extensions and Digital Products</p>
+
+<div class="meta">
+  <strong>Effective date:</strong> 1 May 2025<br>
+  <strong>Version:</strong> 1.0<br>
+  <strong>Seller:</strong> Rafał Orda trading as ORDA AI SOLUTIONS, United Kingdom<br>
+  <strong>Contact:</strong> <a href="mailto:contact@ordaaisolutions.co.uk">contact@ordaaisolutions.co.uk</a><br>
+  <strong>Scope:</strong> All Chrome browser extensions and digital products published by ORDA AI SOLUTIONS.<br>
+  <strong>Languages:</strong> Available in 54 languages — see the language selector above.
+</div>
+
+<div class="highlight">
+  <strong>Merchant of Record.</strong> All purchases are processed by <strong>Paddle.com Market Limited</strong> (United Kingdom), acting as our Merchant of Record. Paddle handles billing, VAT, invoicing, and payment disputes on our behalf.
+</div>
+
+<div class="toc">
+  <strong>Contents</strong>
+  <ol>
+    <li>Who we are</li>
+    <li>Languages</li>
+    <li>Products and access tiers</li>
+    <li>How purchasing works</li>
+    <li>Available plans and pricing</li>
+    <li>No automatic renewal</li>
+    <li>Licence grant and restrictions</li>
+    <li>Free plan</li>
+    <li>Bring Your Own Key (BYOK)</li>
+    <li>AI-generated content</li>
+    <li>Refunds and right of withdrawal</li>
+    <li>Chargebacks</li>
+    <li>Warranties and disclaimers</li>
+    <li>Limitation of liability</li>
+    <li>Acceptable use</li>
+    <li>Intellectual property</li>
+    <li>Updates and discontinuation</li>
+    <li>Governing law and jurisdiction</li>
+    <li>Changes to these Terms</li>
+    <li>Contact</li>
+    <li>Annex — Model withdrawal form</li>
+  </ol>
+</div>
+
+<h2>1. Who we are</h2>
+<p>Rafał Orda trading as <strong>ORDA AI SOLUTIONS</strong>, United Kingdom.</p>
+<p>📧 <a href="mailto:contact@ordaaisolutions.co.uk">contact@ordaaisolutions.co.uk</a></p>
+
+<h2>2. Languages</h2>
+<p>These Terms are published in 54 languages. The English version is the legally binding original; translations are provided for informational purposes so that every customer can understand their rights before purchasing.</p>
+
+<h2>3. Products and access tiers</h2>
+<p>We publish Chrome browser extensions and other digital products. Each Product may offer:</p>
+<ul>
+  <li><strong>Free plan</strong> — limited functionality, available at no cost;</li>
+  <li><strong>PRO plan</strong> — extended functionality, available by purchasing a fixed-term access pass.</li>
+</ul>
+
+<h2>4. How purchasing works</h2>
+<p>To make a purchase you must be logged in with a verified email address. Before payment is processed, you must individually tick four separate, non-pre-ticked checkboxes confirming you have read and accept: (a) these Terms of Sale, (b) our Privacy Policy, (c) our Refund Policy, and (d) that you are purchasing a digital access pass delivered immediately. We record the timestamp, document versions accepted, and a salted hash of your IP address as evidence of consent.</p>
+
+<h2>5. Available plans and pricing</h2>
+<table>
+  <tr><th>Plan</th><th>Duration</th><th>Price</th></tr>
+  <tr><td>PRO — 30 days</td><td>30 calendar days from activation</td><td>$4.99 USD</td></tr>
+  <tr><td>PRO — 90 days</td><td>90 calendar days from activation</td><td>$12.99 USD</td></tr>
+</table>
+<p>Prices are displayed in USD. Paddle adds applicable VAT or sales tax at checkout — the total inclusive of tax is shown before you confirm payment.</p>
+<p>A PRO access pass activates immediately upon successful payment. The remaining access period is displayed in your Account tab within the Product.</p>
+
+<h2>6. No automatic renewal</h2>
+<div class="success">
+  <strong>We do not charge you automatically.</strong> There is no subscription, no auto-renewal, and no recurring billing. Each purchase is a one-time payment for a fixed access period. When your access period expires, your account returns to the Free plan. If you wish to continue PRO access, you must make a new purchase manually.
+</div>
+<p>You cannot purchase a new access pass while an existing one is still active. A new purchase becomes available once your current access period has expired.</p>
+
+<h2>7. Licence grant and restrictions</h2>
+<p>Upon successful payment, we grant you a personal, non-exclusive, non-transferable, revocable licence to use the PRO features of the relevant Product for the purchased access period.</p>
+<p>You must not:</p>
+<ul>
+  <li>Resell, sublicense, redistribute, or transfer your access pass to any third party;</li>
+  <li>Reverse-engineer, decompile, or disassemble the Product;</li>
+  <li>Attempt to bypass, circumvent, or extend the access period by any technical means;</li>
+  <li>Share account credentials or one-time login codes with other persons.</li>
+</ul>
+
+<h2>8. Free plan</h2>
+<p>The Free plan is provided as-is with no service-level guarantee. We reserve the right to modify Free plan limits at any time with 14 days' notice. The Free plan uses Cloudflare Workers AI (Meta Llama model). ORDA AI SOLUTIONS does not operate this AI model — it is provided by Cloudflare, Inc. under their own terms. We accept no responsibility for the accuracy or suitability of AI-generated content produced via the Free plan.</p>
+
+<h2>9. Bring Your Own Key (BYOK)</h2>
+<p>PRO users may provide their own API key for a third-party AI provider. When you do so, your API key is stored only on your device and is never transmitted to our servers. ORDA AI SOLUTIONS acts solely as a conduit — we provide the interface through which you access AI services of your own choosing. We have no control over, and accept no responsibility for, the outputs, accuracy, availability, or conduct of any third-party AI provider. Your use of that provider is governed exclusively by their own terms of service.</p>
+
+<h2>10. AI-generated content</h2>
+<p>Our Products use AI language models to generate outputs. ORDA AI SOLUTIONS is a software publisher only — we do not operate or control any AI model. AI-generated content may be inaccurate, incomplete, or unsuitable for your purpose. You are solely responsible for verifying AI-generated content before relying on it for any decision. We accept no liability for decisions made on the basis of AI-generated outputs.</p>
+
+<h2>11. Refunds and right of withdrawal</h2>
+<p>We offer a <strong>14-day, no-questions-asked refund</strong> on any purchase. See our full <a href="refund-policy.html">Refund Policy</a> for details.</p>
+<p>If you are a consumer in the UK or EU, you have a statutory 14-day right to withdraw from a digital-content contract. By ticking the digital-goods acknowledgement checkbox at checkout, you expressly request immediate access and acknowledge that your statutory right of withdrawal begins at that point. Our voluntary 14-day refund policy applies regardless.</p>
+
+<h2>12. Chargebacks</h2>
+<p>Please contact us before filing a chargeback — refunds are faster and simpler. Paddle handles all chargeback disputes on our behalf using the consent record, order confirmation, and access logs as evidence. Nothing in this section limits your statutory right to dispute an unauthorised payment with your bank.</p>
+
+<h2>13. Warranties and disclaimers</h2>
+<p>We warrant that each Product will substantially conform to its Chrome Web Store description for 14 days from purchase. Beyond that, the Product is provided "as is" and "as available". We do not warrant that the Product will be uninterrupted or error-free, or that AI-generated outputs will be accurate.</p>
+<p>Nothing in these Terms excludes liability for: (a) death or personal injury caused by negligence; (b) fraud; or (c) any liability that cannot be excluded under applicable law, including the Consumer Rights Act 2015 (UK).</p>
+
+<h2>14. Limitation of liability</h2>
+<p>Our total aggregate liability to you is limited to the amount you paid for the relevant access pass. We are not liable for indirect, consequential, or incidental losses, loss of data, or loss of profits.</p>
+
+<h2>15. Acceptable use</h2>
+<p>You must not use any Product to engage in unlawful activity, infringe third-party rights, or bypass technical-protection measures.</p>
+
+<h2>16. Intellectual property</h2>
+<p>All intellectual-property rights in our Products remain with ORDA AI SOLUTIONS or our licensors. The licence in section 7 does not transfer any ownership rights.</p>
+
+<h2>17. Updates and discontinuation</h2>
+<p>We update our Products periodically. If we discontinue a Product while you have an active access pass, we will either provide equivalent access or refund the unused portion on a pro-rata basis.</p>
+
+<h2>18. Governing law and jurisdiction</h2>
+<p>These Terms are governed by the laws of <strong>England and Wales</strong>. Any dispute is subject to the exclusive jurisdiction of the courts of England and Wales, except where mandatory consumer-protection law in your country of residence applies.</p>
+
+<h2>19. Changes to these Terms</h2>
+<p>We may update these Terms. Material changes will be communicated via in-Product notification at least 14 days before taking effect. Continued use after changes constitutes acceptance.</p>
+
+<h2>20. Contact</h2>
+<p>📧 <strong><a href="mailto:contact@ordaaisolutions.co.uk">contact@ordaaisolutions.co.uk</a></strong><br>
+Rafał Orda trading as ORDA AI SOLUTIONS, United Kingdom.<br>
+Typical reply within 24 hours.</p>
+
+<h2>21. Annex — Model withdrawal form (UK / EU consumers)</h2>
+<p>To exercise your statutory right of withdrawal, you may use the form below or send a clear statement by email.</p>
+<div class="withdrawal-form">To: ORDA AI SOLUTIONS
+Email: contact@ordaaisolutions.co.uk
+
+I hereby give notice that I withdraw from my contract for the supply of the following digital product:
+[Product name and order ID]
+
+Ordered on: [date]
+Name:
+Email address used at checkout:
+Date:
+</div>
+
+</main>
+
+<footer>
+  Rafał Orda trading as ORDA AI SOLUTIONS — United Kingdom<br>
+  Not affiliated with Google LLC. Chrome is a trademark of Google LLC.<br>
+  <a href="privacy-policy.html">Privacy Policy</a> · <a href="terms.html">Terms of Sale</a> · <a href="refund-policy.html">Refund Policy</a>
+</footer>
+
+</body>
+</html>
